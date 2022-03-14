@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<populations>
+  <population Name="Missile 2" Load="Merge">
+    <group Name="Items" Style="pickone" Load="Merge">
+      <object Weight="2" Number="1" Blueprint="jhg_9mmcalibrated" />
+      <object Weight="2" Number="1" Blueprint="jhg_deagle" />
+    </group>
+  </population>
+  <population Name="Missile 3" Load="Merge">
+    <group Name="Items" Style="pickone" Load="Merge">
+      <object Weight="10" Number="1" Blueprint="jhg_9mmcalibrated" />
+      <object Weight="10" Number="1" Blueprint="jhg_deagle" />
+      <object Weight="5" Number="1" Blueprint="jhg_love" />
+    </group>
+  </population>
+  <population Name="Missile 4" Load="Merge">
+    <group Name="Items" Style="pickone" Load="Merge">
+      <object Weight="10" Number="1" Blueprint="jhg_love" />
+    </group>
+  </population>
+  <population Name="Missile 5" Load="Merge">
+    <group Name="Items" Style="pickone" Load="Merge">
+      <object Weight="5" Number="1" Blueprint="jhg_death" />
+      <object Weight="5" Number="1" Blueprint="jhg_bloodletter" />
+      <object Weight="5" Number="1" Blueprint="jhg_cri_emp_rifle" />
+    </group>
+  </population>
+  <population Name="Missile 6" Load="Merge">
+    <group Name="Items" Style="pickone" Load="Merge">
+      <object Weight="10" Number="1" Blueprint="jhg_death" />
+      <object Weight="10" Number="1" Blueprint="jhg_bloodletter" />
+      <object Weight="10" Number="1" Blueprint="jhg_cri_emp_rifle" />
+    </group>
+  </population>
+
+  <population Name="Guns 3" Load="Merge">
+    <group Name="Items" Style="pickone" Load="Merge">
+      <object Blueprint="jhg_9mmcalibrated" Weight="50" />
+    </group>
+  </population>
+  <population Name="Guns 4" Load="Merge">
+    <group Name="Items" Style="pickone" Load="Merge">
+      <object Blueprint="jhg_deagle" Weight="50" />
+    </group>
+  </population>
+  <population Name="Guns 5" Load="Merge">
+    <group Name="Items" Style="pickone" Load="Merge">
+      <object Blueprint="jhg_love" Weight="50" />
+      <object Blueprint="jhg_death" Weight="50" />
+      <object Blueprint="jhg_bloodletter" Weight="50" />
+      <object Blueprint="jhg_cri_emp_rifle" Weight="50" />
+    </group>
+  </population>
+
+  <population Name="Pistols 5" Load="Merge">
+    <group Name="Items" Style="pickone" Load="Merge">
+      <object Blueprint="jhg_love" Weight="30" />
+      <object Blueprint="jhg_death" Weight="30" />
+    </group>
+  </population>
+
+  <population Name="Rifles 5" Load="Merge">
+    <group Name="Items" Style="pickone" Load="Merge">
+      <object Blueprint="jhg_bloodletter" Weight="50" />
+      <object Blueprint="jhg_cri_emp_rifle" Weight="50" />
+    </group>
+  </population>
+  <!-- TODO: melee weapons -->
+</populations>
