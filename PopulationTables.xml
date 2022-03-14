@@ -4,12 +4,14 @@
     <group Name="Items" Style="pickone" Load="Merge">
       <object Weight="2" Number="1" Blueprint="jhg_9mmcalibrated" />
       <object Weight="2" Number="1" Blueprint="jhg_deagle" />
+      <object Weight="2" Number="1" Blueprint="jhg_9mm_frag_shotgun" />
     </group>
   </population>
   <population Name="Missile 3" Load="Merge">
     <group Name="Items" Style="pickone" Load="Merge">
       <object Weight="10" Number="1" Blueprint="jhg_9mmcalibrated" />
       <object Weight="10" Number="1" Blueprint="jhg_deagle" />
+      <object Weight="10" Number="1" Blueprint="jhg_9mm_frag_shotgun" />
       <object Weight="5" Number="1" Blueprint="jhg_love" />
     </group>
   </population>
@@ -41,6 +43,7 @@
   <population Name="Guns 4" Load="Merge">
     <group Name="Items" Style="pickone" Load="Merge">
       <object Blueprint="jhg_deagle" Weight="50" />
+      <object Blueprint="jhg_9mm_frag_shotgun" Weight="50" />
     </group>
   </population>
   <population Name="Guns 5" Load="Merge">

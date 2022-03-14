@@ -133,4 +133,27 @@ Manually reloading draws blood from the wielder, dealing 1d5 damage per bullet r
     <part Name="Render" DisplayName="{{W|EMP pulse}}" ColorString="&amp;W" />
     <part Name="Projectile" BasePenetration="2" BaseDamage="1d4" ColorString="&amp;W" PassByVerb="streak" />
   </object>
+
+  <!-- SHOTGUNS -->
+
+  <object Name="jhg_9mm_frag_shotgun" Inherits="BaseMagazineRifle">
+    <part Name="Render" DisplayName="9mm {{r|frag}} shotgun" Tile="Items/sw_shotgun_1.bmp" ColorString="&amp;r" TileColor="&amp;r" DetailColor="K" />
+    <part Name="Physics" Weight="12" UsesTwoSlots="true" />
+    <part Name="Commerce" Value="150" />
+    <part Name="MissileWeapon" Skill="Rifle" NoWildfire="true" ShotsPerAction="8" AmmoPerAction="4" ShotsPerAnimation="8" WeaponAccuracy="45" RangeIncrement="6" />
+    <part Name="MagazineAmmoLoader" ProjectileObject="jhg_projectile_9mm_frag_shotgun" AmmoPart="AmmoSlug" MaxAmmo="4" />
+    <part Name="JHG_Shredder" />
+    <part Name="Description" Short="A peculiar shotgun that can be fed with lead slugs. An internal mechanism shreds the slugs into shrapnel." />
+    <part Name="RulesDescription" Text="Shredder: shots cause bleed, critical hits against bleeding targets." />
+    <part Name="Examiner" AlternateDisplayName="rifle" Complexity="4" Difficulty="0" />
+    <part Name="TinkerItem" Bits="0014" CanDisassemble="true" CanRepair="true" />
+    <part Name="Metal" />
+    <tag Name="MissileFireSound" Value="shotgun1_2" />
+    <tag Name="Tier" Value="4" />
+    <tag Name="DynamicObjectsTable:Guns" />
+  </object>
+  <object Name="jhg_projectile_9mm_frag_shotgun" Inherits="BaseShotgunProjectile">
+    <part Name="Projectile" BasePenetration="5" BaseDamage="1d2" />
+  </object>
+
 </objects> 
