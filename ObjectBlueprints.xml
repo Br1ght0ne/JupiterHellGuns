@@ -107,4 +107,29 @@ Manually reloading draws blood from the wielder, dealing 1d5 damage per bullet r
   <object Name="jhg_projectile_bloodletter" Inherits="TemporaryProjectile">
     <part Name="Projectile" BasePenetration="7" BaseDamage="1d12" />
   </object>
+
+  <object Name="jhg_cri_emp_rifle" Inherits="BaseRifle">
+    <part Name="Render" DisplayName="{{M|CRI}} {{W|EMP}} rifle" ColorString="&amp;W" Tile="items/sw_techrifle_1.bmp" />
+    <part Name="Physics" Weight="9" UsesTwoSlots="true" />
+    <part Name="MissileWeapon" Skill="Rifle" AmmoChar="&amp;C&#15;" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="2" />
+    <part Name="Commerce" Value="950" />
+    <part Name="EnergyAmmoLoader" ChargeUse="200" ProjectileObject="jhg_projectile_cri_emp_rifle" />
+    <part Name="EnergyCellSocket" SlotType="EnergyCell" />
+    <part Name="Description" Short="Experimental anti-mech personal weapon. Still damages meatbags, that's being fixed in Mk2." />
+    <part Name="RulesDescription" Text="Applies EMP effect to hit metal objects." />
+    <part Name="JHG_EMPOnHit" Damage="1d3" Duration="1d3" />
+    <part Name="Examiner" AlternateDisplayName="rifle" Complexity="5" />
+    <part Name="TinkerItem" Bits="00245" CanDisassemble="true" CanRepair="true" />
+    <part Name="Metal" />
+    <tag Name="MissileFireSound" Value="laser_medium_1" />
+    <!-- TODO: BeamWeaponMods -->
+    <!-- <tag Name="Mods" Value="MissileWeaponMods,FirearmMods,CommonMods,RifleMods,ElectronicsMods,BeamWeaponMods" /> -->
+    <tag Name="Mods" Value="MissileWeaponMods,FirearmMods,CommonMods,RifleMods,ElectronicsMods" />
+    <tag Name="Tier" Value="5" />
+    <tag Name="DynamicObjectsTable:Guns" />
+  </object>
+  <object Name="jhg_projectile_cri_emp_rifle" Inherits="TemporaryProjectile">
+    <part Name="Render" DisplayName="{{W|EMP pulse}}" ColorString="&amp;W" />
+    <part Name="Projectile" BasePenetration="2" BaseDamage="1d4" ColorString="&amp;W" PassByVerb="streak" />
+  </object>
 </objects> 
