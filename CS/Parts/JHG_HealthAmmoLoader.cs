@@ -40,7 +40,7 @@ namespace XRL.World.Parts
                     {
                         IComponent<GameObject>.AddPlayerMessage(ParentObject.The + ParentObject.ShortDisplayName + ParentObject.Is + " already full of " + liquidVolume.GetLiquidName() + ".");
                     }
-                    return true;
+                    return false;
                 }
                 E.NeededReload.Add(this);
                 int dramsToLoad = liquidVolume.MaxVolume - liquidVolume.Volume;
@@ -52,7 +52,7 @@ namespace XRL.World.Parts
                     {
                         IComponent<GameObject>.AddPlayerMessage("Reloading " + ParentObject.the + ParentObject.ShortDisplayName + " might kill you.");
                     }
-                    return true;
+                    return false;
                 }
                 E.TriedToReload.Add(this);
                 int totalDamage = damageRoll.Roll();
@@ -76,7 +76,7 @@ namespace XRL.World.Parts
                     IComponent<GameObject>.AddPlayerMessage("You " + ((liquidVolume.Volume < liquidVolume.MaxVolume) ? "partially " : "") + "fill " + ParentObject.the + ParentObject.ShortDisplayName + " with your own " + liquidVolume.GetLiquidName() + ".");
                 }
             }
-            return true;
+            return false;
         }
     }
 }
