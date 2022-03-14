@@ -106,7 +106,7 @@ Manually reloading draws blood from the wielder, dealing 1d5 damage per bullet r
     <tag Name="DynamicObjectsTable:Guns" />
   </object>
   <object Name="jhg_projectile_bloodletter" Inherits="TemporaryProjectile">
-    <part Name="Projectile" BasePenetration="7" BaseDamage="1d12" />
+    <part Name="Projectile" BasePenetration="10" BaseDamage="1d12" />
   </object>
 
   <object Name="jhg_cri_emp_rifle" Inherits="BaseRifle">
