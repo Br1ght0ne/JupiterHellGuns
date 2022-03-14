@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+  <!-- PISTOLS -->
+
+  <object Name="jhg_9mmcalibrated" Inherits="BaseMagazinePistol">
+    <part Name="Render" DisplayName="9mm {{M|calibrated}}" RenderString=")" Tile="items/sw_autopistol.bmp" ColorString="&amp;M" DetailColor="K"/>
+    <part Name="Physics" Weight="3" />
+    <part Name="Commerce" Value="150" />
+    <part Name="MissileWeapon" AnimationDelay="0" Skill="Pistol" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="6" RangeIncrement="6" />
+    <part Name="MagazineAmmoLoader" ProjectileObject="jhg_projectile_9mmcalibrated" AmmoPart="AmmoSlug" MaxAmmo="6" />
+    <part Name="Description" Short="A really well calibrated 9mm pistol, capable of piercing armor. Probably created by someone in the middle of some calibrations." />
+    <part Name="Metal" />
+    <part Name="TinkerItem" Bits="0013" CanDisassemble="true" CanBuild="true" CanRepair="true" />
+    <tag Name="Tier" Value="3" />
+    <part Name="Examiner" AlternateDisplayName="pistol" Complexity="3" />
+    <tag Name="MissileFireSound" Value="pistol_singleShot" />
+    <tag Name="DynamicObjectsTable:Guns" />
+    <tag Name="TurretName" Value="9mm calibrated turret" />
+  </object>
+  <object Name="jhg_projectile_9mmcalibrated" Inherits="BaseLeadSlugProjectile">
+    <part Name="Projectile" BasePenetration="7" BaseDamage="1d6" />
+  </object>
+
+  <object Name="jhg_deagle" Inherits="BaseMagazinePistol">
+    <part Name="Render" DisplayName=".44 {{urban camouflage|deagle}}" RenderString=")" Tile="items/sw_autopistol.bmp" ColorString="&amp;y" DetailColor="K"/>
+    <part Name="Physics" Weight="6" />
+    <part Name="Commerce" Value="200" />
+    <part Name="MissileWeapon" AnimationDelay="0" Skill="Pistol" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="4" RangeIncrement="6" />
+    <part Name="MagazineAmmoLoader" ProjectileObject="jhg_projectile_deagle" AmmoPart="AmmoSlug" MaxAmmo="8" />
+    <part Name="Description" Short="Law enforcement semi-automatic pistol, packing .44 ammo. Often used by terrorists, mostly when they rush B." />
+    <part Name="Metal" />
+    <part Name="TinkerItem" Bits="024" CanDisassemble="true" CanBuild="true" CanRepair="true" />
+    <tag Name="Tier" Value="4" />
+    <part Name="Examiner" AlternateDisplayName="pistol" Complexity="4" />
+    <tag Name="MissileFireSound" Value="pistol_singleShot" />
+    <tag Name="DynamicObjectsTable:Guns" />
+    <tag Name="TurretName" Value=".44 deagle turret" />
+  </object>
+  <object Name="jhg_projectile_deagle" Inherits="BaseLeadSlugProjectile">
+    <part Name="Projectile" BasePenetration="4" BaseDamage="1d8" />
+  </object>
+
+  <object Name="jhg_love" Inherits="BaseMagazinePistol">
+    <part Name="Render" DisplayName="{{love|Love}}" RenderString=")" Tile="items/sw_autopistol.bmp" ColorString="&amp;R" DetailColor="K"/>
+    <part Name="Physics" Weight="4" />
+    <part Name="Commerce" Value="300" />
+    <part Name="MissileWeapon" AnimationDelay="0" Skill="Pistol" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="6" RangeIncrement="6" />
+    <part Name="MagazineAmmoLoader" ProjectileObject="jhg_projectile_love" AmmoPart="AmmoSlug" MaxAmmo="6" />
+    <part Name="Description" Short="An ornate .44 revolver with the word '{{love|Love}}' etched on the barrel." />
+    <part Name="RulesDescription" Text="Heals the wielder on hit." />
+    <part Name="JHG_Love" Amount="1-4" />
+    <part Name="Metal" />
+    <part Name="TinkerItem" Bits="0035" CanDisassemble="true" CanRepair="true" />
+    <tag Name="Tier" Value="5" />
+    <part Name="Examiner" AlternateDisplayName="revolver" Complexity="5" />
+    <tag Name="MissileFireSound" Value="pistol_singleShot" />
+    <tag Name="DynamicObjectsTable:Guns" />
+  </object>
+  <object Name="jhg_projectile_love" Inherits="BaseLeadSlugProjectile">
+    <part Name="Projectile" BasePenetration="5" BaseDamage="1d10" />
+  </object>
+
+  <!-- SEMI-AUTO-->
+
+  <object Name="jhg_bloodletter" Inherits="BaseMagazineRifle">
+    <part Name="Render" DisplayName="{{R|Blood}}{{r|letter}}" RenderString=")" Tile="items/sw_sniper_rifle.bmp" ColorString="&amp;R" DetailColor="r"/>
+    <part Name="Physics" UsesTwoSlots="true" Weight="12" />
+    <part Name="Commerce" Value="350" />
+    <part Name="MissileWeapon" AnimationDelay="0" Skill="Rifle" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0" />
+    <part Name="JHG_HealthAmmoLoader" ProjectileObject="jhg_projectile_bloodletter" />
+    <part Name="LiquidVolume" MaxVolume="5" Volume="5" StartVolume="0" InitialLiquid="blood-1000" />
+    <part Name="Description" Short="This weapon looks like it was ripped straight from the arms of a demon." />
+    <part Name="RulesDescription" Text="This weapon reloads using blood.
+Manually reloading draws blood from the wielder, dealing 1d5 damage per bullet reloaded and applying bleeding." />
+    <part Name="Metal" />
+    <part Name="TinkerItem" Bits="0345" CanDisassemble="true" CanRepair="true" />
+    <tag Name="Tier" Value="5" />
+    <part Name="Examiner" AlternateDisplayName="rifle" Complexity="5" />
+    <tag Name="MissileFireSound" Value="teleport_long" />
+    <tag Name="ReloadSound" Value="SplashStep1" />
+    <tag Name="DynamicObjectsTable:Guns" />
+  </object>
+  <object Name="jhg_projectile_bloodletter" Inherits="TemporaryProjectile">
+    <part Name="Projectile" BasePenetration="7" BaseDamage="1d12" />
+  </object>
+</objects> 
