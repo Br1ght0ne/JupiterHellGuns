@@ -156,4 +156,25 @@ Manually reloading draws blood from the wielder, dealing 1d5 damage per bullet r
     <part Name="Projectile" BasePenetration="5" BaseDamage="1d2" />
   </object>
 
+  <object Name="jhg_12ga_elephant_gun" Inherits="BaseMagazineRifle">
+    <part Name="Render" DisplayName="12ga {{pearly|elephant}} gun" Tile="Items/sw_shotgun_1.bmp" ColorString="&amp;Y" TileColor="&amp;Y" DetailColor="y" />
+    <part Name="Physics" Weight="16" UsesTwoSlots="true" />
+    <part Name="Commerce" Value="200" />
+    <part Name="MissileWeapon" Skill="Rifle" NoWildfire="true" ShotsPerAction="8" AmmoPerAction="2" ShotsPerAnimation="8" WeaponAccuracy="45" RangeIncrement="6" />
+    <part Name="MagazineAmmoLoader" ProjectileObject="jhg_projectile_12ga_elephant_gun" AmmoPart="AmmoShotgunShell" MaxAmmo="2" />
+    <part Name="JHG_ConfuseOnHit" />
+    <part Name="Description" Short="Before the age of the Sultanate, this used to be a weapon against big prey.
+But Qud got no elephants anymore, and there are mutants to kill." />
+    <part Name="RulesDescription" Text="Concussive: Applies confusion on hit." />
+    <part Name="Examiner" AlternateDisplayName="rifle" Complexity="4" Difficulty="0" />
+    <part Name="TinkerItem" Bits="0124" CanDisassemble="true" CanRepair="true" />
+    <part Name="Metal" />
+    <tag Name="MissileFireSound" Value="shotgun1_2" />
+    <tag Name="Tier" Value="4" />
+    <tag Name="DynamicObjectsTable:Guns" />
+  </object>
+  <object Name="jhg_projectile_12ga_elephant_gun" Inherits="BaseShotgunProjectile">
+    <part Name="Projectile" BasePenetration="6" BaseDamage="1d2" />
+  </object>
+
 </objects> 
