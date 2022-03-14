@@ -24,8 +24,9 @@ public class JHG_Gunbox
                 }
             }
         }
-        // leadslugs
+        // leadslugs & shells
         player.TakeObject("Lead Slug", 10000);
+        player.TakeObject("Shotgun Shell", 10000);
         player.GetCurrentCell().GetCellFromDirection("N").AddObject(box);
         return;
     }
