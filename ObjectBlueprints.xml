@@ -6,7 +6,7 @@
     <part Name="Render" DisplayName="9mm {{M|calibrated}}" RenderString=")" Tile="items/sw_autopistol.bmp" ColorString="&amp;M" DetailColor="K"/>
     <part Name="Physics" Weight="3" />
     <part Name="Commerce" Value="150" />
-    <part Name="MissileWeapon" AnimationDelay="0" Skill="Pistol" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="6" RangeIncrement="6" />
+    <part Name="MissileWeapon" AnimationDelay="0" Skill="Pistol" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="6" />
     <part Name="MagazineAmmoLoader" ProjectileObject="jhg_projectile_9mm_calibrated" AmmoPart="AmmoSlug" MaxAmmo="6" />
     <part Name="Description" Short="A really well calibrated 9mm pistol, capable of piercing armor. Probably created by someone in the middle of some calibrations." />
     <part Name="Metal" />
@@ -25,7 +25,7 @@
     <part Name="Render" DisplayName=".44 {{urban camouflage|deagle}}" RenderString=")" Tile="items/sw_autopistol.bmp" ColorString="&amp;y" DetailColor="K"/>
     <part Name="Physics" Weight="6" />
     <part Name="Commerce" Value="200" />
-    <part Name="MissileWeapon" AnimationDelay="0" Skill="Pistol" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="4" RangeIncrement="6" />
+    <part Name="MissileWeapon" AnimationDelay="0" Skill="Pistol" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="4" />
     <part Name="MagazineAmmoLoader" ProjectileObject="jhg_projectile_deagle" AmmoPart="AmmoSlug" MaxAmmo="8" />
     <part Name="Description" Short="Law enforcement semi-automatic pistol, packing .44 ammo. Often used by terrorists, mostly when they rush B." />
     <part Name="Metal" />
@@ -44,7 +44,7 @@
     <part Name="Render" DisplayName="{{love|Love}}" RenderString=")" Tile="items/sw_autopistol.bmp" ColorString="&amp;R" DetailColor="K"/>
     <part Name="Physics" Weight="4" />
     <part Name="Commerce" Value="300" />
-    <part Name="MissileWeapon" AnimationDelay="0" Skill="Pistol" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="6" RangeIncrement="6" />
+    <part Name="MissileWeapon" AnimationDelay="0" Skill="Pistol" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="6" />
     <part Name="MagazineAmmoLoader" ProjectileObject="jhg_projectile_love" AmmoPart="AmmoSlug" MaxAmmo="6" />
     <part Name="Description" Short="An ornate .44 revolver with the word '{{love|Love}}' etched on the barrel." />
     <part Name="RulesDescription" Text="Heals the wielder on hit." />
