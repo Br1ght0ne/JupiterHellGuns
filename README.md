@@ -14,6 +14,9 @@ Disclaimer: no 100% similarity. I tried to make the guns feel the same way as in
 - Death (energy pistol, stacking damage debuff)
 - Bloodletter (rifle, reload using either blood or health)
 - CRI EMP rifle (applies EMP on hit)
+- 9mm frag shotgun (shotgun using lead slugs, bleed on hit, crit on bleeding)
+- 12ga elephant gun (apply confusion on hit)
+- `jhg_gunbox` wish (spawns a chest with all JHG weapons, good for testing)
 
 [Caves of Qud]: https://store.steampowered.com/app/333640/Caves_of_Qud/
 [Jupiter Hell]: https://store.steampowered.com/app/811320/Jupiter_Hell/
