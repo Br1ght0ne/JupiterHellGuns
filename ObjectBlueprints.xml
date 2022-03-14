@@ -60,6 +60,30 @@
     <part Name="Projectile" BasePenetration="5" BaseDamage="1d10" />
   </object>
 
+  <object Name="jhg_death" Inherits="BaseMagazinePistol">
+    <part Name="Render" DisplayName="{{G|Death}}" RenderString=")" Tile="items/sw_techpistol_1.bmp" DetailColor="G"/>
+    <part Name="Physics" Weight="4" />
+    <part Name="Commerce" Value="600" />
+    <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;C&#15;" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="4" />
+    <part Name="EnergyAmmoLoader" ChargeUse="200" ProjectileObject="jhg_projectile_death" />
+    <part Name="EnergyCellSocket" SlotType="EnergyCell" />
+    <part Name="Description" Short="An almost alien looking energy hand cannon with the word '{{G|Death}}' etched on the barrel." />
+    <part Name="RulesDescription" Text="Death: Damaged living enemies are going to die.
+Applies the Death status effect, which deals doubling damage (starting with 2) each turn." />
+    <part Name="JHG_Death" />
+    <part Name="Metal" />
+    <part Name="TinkerItem" Bits="0025" CanDisassemble="true" CanRepair="true" />
+    <tag Name="Tier" Value="5" />
+    <part Name="Examiner" AlternateDisplayName="pistol" Complexity="5" />
+    <tag Name="MissileFireSound" Value="pistol_laser" />
+    <tag Name="DynamicObjectsTable:Guns" />
+  </object>
+  <object Name="jhg_projectile_death" Inherits="TemporaryProjectile">
+    <part Name="Render" DisplayName="{{G|deadly}} {{C|laser beam}}" ColorString="&amp;G" />
+    <part Name="Projectile" BasePenetration="5" BaseDamage="1d10" Attributes="Light Laser" ColorString="&amp;G" PassByVerb="streak" />
+    <tag Name="Light" />
+  </object>
+
   <!-- SEMI-AUTO-->
 
   <object Name="jhg_bloodletter" Inherits="BaseMagazineRifle">
