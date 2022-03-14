@@ -2,12 +2,12 @@
 <objects>
   <!-- PISTOLS -->
 
-  <object Name="jhg_9mmcalibrated" Inherits="BaseMagazinePistol">
+  <object Name="jhg_9mm_calibrated" Inherits="BaseMagazinePistol">
     <part Name="Render" DisplayName="9mm {{M|calibrated}}" RenderString=")" Tile="items/sw_autopistol.bmp" ColorString="&amp;M" DetailColor="K"/>
     <part Name="Physics" Weight="3" />
     <part Name="Commerce" Value="150" />
     <part Name="MissileWeapon" AnimationDelay="0" Skill="Pistol" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="6" RangeIncrement="6" />
-    <part Name="MagazineAmmoLoader" ProjectileObject="jhg_projectile_9mmcalibrated" AmmoPart="AmmoSlug" MaxAmmo="6" />
+    <part Name="MagazineAmmoLoader" ProjectileObject="jhg_projectile_9mm_calibrated" AmmoPart="AmmoSlug" MaxAmmo="6" />
     <part Name="Description" Short="A really well calibrated 9mm pistol, capable of piercing armor. Probably created by someone in the middle of some calibrations." />
     <part Name="Metal" />
     <part Name="TinkerItem" Bits="0013" CanDisassemble="true" CanBuild="true" CanRepair="true" />
@@ -17,7 +17,7 @@
     <tag Name="DynamicObjectsTable:Guns" />
     <tag Name="TurretName" Value="9mm calibrated turret" />
   </object>
-  <object Name="jhg_projectile_9mmcalibrated" Inherits="BaseLeadSlugProjectile">
+  <object Name="jhg_projectile_9mm_calibrated" Inherits="BaseLeadSlugProjectile">
     <part Name="Projectile" BasePenetration="7" BaseDamage="1d6" />
   </object>
 
