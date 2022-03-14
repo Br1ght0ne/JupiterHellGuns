@@ -1,8 +1,4 @@
 using System;
-using XRL.Rules;
-using XRL.World;
-using XRL.World.Parts;
-using XRL.World.Parts.Skill;
 
 namespace XRL.World.Parts
 {

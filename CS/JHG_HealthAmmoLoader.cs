@@ -1,9 +1,4 @@
 using System;
-using XRL.Rules;
-using XRL.World;
-using XRL.World.Effects;
-using XRL.World.Parts;
-using XRL.World.Parts.Skill;
 
 namespace XRL.World.Parts
 {
@@ -66,7 +61,7 @@ namespace XRL.World.Parts
                 {
                     for (int i = 0; i < dramsToLoad; i++)
                     {
-                        E.Actor.ApplyEffect(new Bleeding("1d2"));
+                        E.Actor.ApplyEffect(new Effects.Bleeding("1d2"));
                     }
                 }
                 liquidVolume.MixWith(new LiquidVolume(Liquid, dramsToLoad));

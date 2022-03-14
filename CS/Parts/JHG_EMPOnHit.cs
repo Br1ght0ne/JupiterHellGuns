@@ -1,6 +1,4 @@
 using System;
-using XRL.Rules;
-using XRL.World.Effects;
 
 namespace XRL.World.Parts
 {
@@ -33,7 +31,7 @@ namespace XRL.World.Parts
                     if (defender.HasPart("Metal"))
                     {
                         // TODO: Discharge electric damage maybe?
-                        defender.ForceApplyEffect(new ElectromagneticPulsed(Stat.Roll(Duration)));
+                        defender.ForceApplyEffect(new Effects.ElectromagneticPulsed(Rules.Stat.Roll(Duration)));
                     }
                 }
             }
