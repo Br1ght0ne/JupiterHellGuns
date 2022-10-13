@@ -61,7 +61,7 @@ namespace XRL.World.Parts
                 {
                     for (int i = 0; i < dramsToLoad; i++)
                     {
-                        E.Actor.ApplyEffect(new Effects.Bleeding("1d2"));
+                        E.Actor.ApplyEffect(new XRL.World.Effects.Bleeding("1d2"));
                     }
                 }
                 liquidVolume.MixWith(new LiquidVolume(Liquid, dramsToLoad));

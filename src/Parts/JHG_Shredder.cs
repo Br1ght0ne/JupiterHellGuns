@@ -32,7 +32,7 @@ namespace XRL.World.Parts
                         E.SetParameter("Critical", 1);
                     }
                     GameObject.validate(ref attacker);
-                    defender.ApplyEffect(new Effects.Bleeding(Damage, Owner: attacker), attacker);
+                    defender.ApplyEffect(new XRL.World.Effects.Bleeding(Damage, Owner: attacker), attacker);
                 }
             }
             return base.FireEvent(E);

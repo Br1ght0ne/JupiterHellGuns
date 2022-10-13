@@ -31,7 +31,7 @@ namespace XRL.World.Parts
                     if (defender.HasPart("Metal"))
                     {
                         // TODO: Discharge electric damage maybe?
-                        defender.ForceApplyEffect(new Effects.ElectromagneticPulsed(Rules.Stat.Roll(Duration)));
+                        defender.ForceApplyEffect(new XRL.World.Effects.ElectromagneticPulsed(Rules.Stat.Roll(Duration)));
                     }
                 }
             }

@@ -27,7 +27,7 @@ namespace XRL.World.Parts
                     GameObject defender = E.GetGameObjectParameter("Defender");
                     if (defender.GetIntProperty("Inorganic") == 0 && defender.HasStat("Hitpoints"))
                     {
-                        defender.ApplyEffect(new Effects.JHG_Death(Owner: attacker), attacker);
+                        defender.ApplyEffect(new XRL.World.Effects.JHG_Death(Owner: attacker), attacker);
                     }
                 }
             }

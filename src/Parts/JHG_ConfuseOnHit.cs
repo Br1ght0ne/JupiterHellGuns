@@ -31,7 +31,7 @@ namespace XRL.World.Parts
                     GameObject defender = E.GetGameObjectParameter("Defender");
                     if (defender != null && !defender.MakeSave("Willpower", Strength, Vs: "Confusion"))
                     {
-                        defender.ApplyEffect(new Effects.Confused(Duration.RollCached(), Level, Level + 2));
+                        defender.ApplyEffect(new XRL.World.Effects.Confused(Duration.RollCached(), Level, Level + 2));
                     }
                 }
             }
